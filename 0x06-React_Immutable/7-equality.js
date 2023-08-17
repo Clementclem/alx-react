@@ -1,5 +1,5 @@
-import { Map } from 'immutable';
+import { is } from 'immutable';
 
-export default function mergeDeeplyElements(page1, page2) {
-  return Map(page1).mergeDeep(Map(page2));
+export default function areMapsEqual(map1, map2) {
+  return is(map1, map2);
 }
